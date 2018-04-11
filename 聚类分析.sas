@@ -33,7 +33,7 @@ proc discrim data=discdatl testdata=discdat2
      class type;
      var x1-x3;
 run;
-刷黑该块过程命令程序，提交便计算出贝叶斯判别法的结果见表2-4。
+
 语句解释
 no-样品序号，type-原样品类别，label-标签，discrim-判别分析过程命令，
 crosslisterr-要求以交叉表的形式输出实际类别与分类结果之间一致和不一致的有关信息。
@@ -57,8 +57,9 @@ proc stepdisc sle=0.3 sls=0.3;
      class group;
      var x1-x3;
 run;
-刷黑该块过程命令程序，提交便计算出筛选的变量x1、x3；
-语句解释: stepdisc-逐步判别法命令， sle、 sls规定选人变量和剔除
+
+语句解释: 
+stepdisc-逐步判别法命令， sle、 sls规定选入变量和剔除
 变量的显著水平。
 
 x1、x3的判别分析过程命令
@@ -95,7 +96,7 @@ proc discrim data=discdatl testdata=discdat2
      class type;
      var x1 x3;
 run;
-刷黑该块过程命令程序，提交便计算出x1、x3贝叶斯判别法的结果。
+
 
 date fitness;
      input x1-x15;
