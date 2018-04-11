@@ -14,5 +14,7 @@ data sasuser.mysalesdata;
    if product="SOFA";
 run;
 
-This program creates a new table, Mysalesdata (which is stored in the Sasuser library), by reading the Prdsale table that is stored in the Sashelp library. The new table contains only rows in which the value of the column Product is SOFA.
+This program creates a new table, Mysalesdata (which is stored in the Sasuser library), 
+by reading the Prdsale table that is stored in the Sashelp library. 
+The new table contains only rows in which the value of the column Product is SOFA.
     
